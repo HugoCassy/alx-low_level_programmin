@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -c $CFILE && chmod a+x cisfun
+gcc -c $CFILE -o ${CFILE%.*} && chmod a+x cisfun
