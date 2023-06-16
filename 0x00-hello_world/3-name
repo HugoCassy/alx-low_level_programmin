@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -c $CFILE | chmod a+x $CFILE
+gcc -c $CFILE | chmod a+x cisfun
