@@ -1,1 +1,1 @@
-The starting README file in this repo
+This task help to understand C effectively
