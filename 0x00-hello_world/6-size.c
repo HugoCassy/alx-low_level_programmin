@@ -7,7 +7,7 @@
 int main(void)
 {
 	int a;
-	char b
+	char b;
 	long int c;
 	long long int d;
 	float e;
