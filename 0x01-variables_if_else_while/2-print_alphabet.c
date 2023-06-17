@@ -7,6 +7,11 @@
  */
 int main(void)
 {
-	printf("abcdefghijklmnopqrstuvwxyz\n");
+	char alphabets;
+
+	for (alphabets = 'a'; alphabets <= 'z'; alphabets++)
+	{
+		putchar(alphabets);
+	}
 	return (0);
 }
