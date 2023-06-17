@@ -8,8 +8,9 @@
  */
 int main(void)
 {
+	int random_number;
 	srand(time(NULL));
-	int random_number = rand();
+	random_number = rand();
 
 	if (random_number < 0)
 	{
