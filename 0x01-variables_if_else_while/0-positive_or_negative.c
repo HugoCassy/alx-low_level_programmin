@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include <rng-library.h>
+#include <stdlib.h>
+#include <time.h>
 /**
  * main - This prints a random number and state wheter it is possible ot not
  *
@@ -7,8 +8,8 @@
  */
 int main(void)
 {
-	rng_seed();
-	int random_number = rng_rand();
+	srand(time(NULL));
+	int random_number = rand();
 
 	if (random_number < 0)
 	{
@@ -16,7 +17,7 @@ int main(void)
 	}
 	else
 	{
-		print("%d : is positive", random_number);
+		printf("%d : is positive", random_number);
 	}
 	return (0);
 }
