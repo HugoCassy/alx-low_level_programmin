@@ -1,20 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 /**
  * main - Prints alphabets except q and e
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char alphabets[26];
+	char alphabets[] = "abcdfghijklmnoprstuvwxyz";
+	int length = strlen(alphabets);
 
-	alphabets[4] = '\0';
-	alphabets[16] = '\0';
-
-	for (int i = 0; i < 26; i++)
+	for (int i = 0; i < length; i++)
 	{
-		alphabets[i] = 'a' + i;
 		putchar(alphabets[i]);
 	}
+		putchar('\n');
 	return (0);
 }
