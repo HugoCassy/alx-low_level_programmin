@@ -16,12 +16,12 @@ int main(void)
 		{
 			for (l = k + 1; l <= 9; l++)
 			{
-				if ((j != k || l) || (k != j || l) || (l != k || j))
+				if ((j != k) || (j != l) || (k != j) || (k != l) || (l != j) || (l != k))
 				{
 					putchar(j + '0');
 					putchar(k + '0');
 					putchar(l + '0');
-					if (j != 7 && k != 8 && j != 9)
+					if ((j != 7) || (k != 8) || (j != 9))
 					{
 						putchar(',');
 						putchar(' ');
