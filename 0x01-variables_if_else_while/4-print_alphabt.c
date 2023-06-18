@@ -7,10 +7,12 @@
  */
 int main(void)
 {
+	int i;
+
 	char alphabets[] = "abcdfghijklmnoprstuvwxyz";
 	int length = strlen(alphabets);
 
-	for (int i = 0; i < length; i++)
+	for (i = 0; i < length; i++)
 	{
 		putchar(alphabets[i]);
 	}
