@@ -7,13 +7,17 @@
  */
 int main(void)
 {
-	int i;
+	int numbers;
 
-	for (i = 0; i <= 8; i++)
+	for (numbers = 0; numbers <= 9; numbers++)
 	{
-		putchar("%d, ", 1);
+		putchar(numbers + '0');
+		if (numbers != 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
-		putchar('9');
-		putchar('\n');
+			putchar('\n');
 	return (0);
 }
