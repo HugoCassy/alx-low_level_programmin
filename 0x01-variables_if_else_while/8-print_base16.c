@@ -8,12 +8,12 @@
  */
 int main(void)
 {
-	char numbers;
-	char letters;
+	int numbers;
+	int letters;
 
 	for (numbers = 0; numbers < 10; numbers++)
 	{
-		putchar((char)numbers);
+		putchar(numbers + '0');
 	}
 	for (letters = 'A'; letters <= 'F'; letters++)
 	{
