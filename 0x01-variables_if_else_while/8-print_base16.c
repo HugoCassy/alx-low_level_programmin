@@ -15,7 +15,7 @@ int main(void)
 	{
 		putchar((char)numbers);
 	}
-	for (letters = 'A'; letters >= 'F'; letters++)
+	for (letters = 'A'; letters <= 'F'; letters++)
 	{
 		putchar(letters);
 	}
