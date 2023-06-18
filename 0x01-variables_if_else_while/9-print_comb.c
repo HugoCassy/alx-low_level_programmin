@@ -11,10 +11,9 @@ int main(void)
 
 	for (i = 0; i <= 8; i++)
 	{
-		putchar(i + '0');
-		putchar(',');
-		putchar(' ');
+		putchar("%d, ", 1);
 	}
 		putchar('9');
+		putchar('\n');
 	return (0);
 }
