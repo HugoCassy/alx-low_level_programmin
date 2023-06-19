@@ -9,7 +9,7 @@
 int main(void)
 {
 	char message[66] = "and that piece of art is";
-	char message_2[] = " useful\" - Dora Korpar, 2015-10-19\n";
+	char message_2[] = "useful\" - Dora Korpar, 2015-10-19\n";
 
 	strcat(message, message_2);
 
