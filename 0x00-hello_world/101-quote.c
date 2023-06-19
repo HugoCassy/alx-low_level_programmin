@@ -8,11 +8,11 @@
  */
 int main(void)
 {
-	char message[65] = "and that piece of art is";
+	char message[59] = "and that piece of art is";
 	char message_2[] = " useful\" - Dora Korpar, 2015-10-19\n";
 
 	strcat(message, message_2);
 
-	write(2, message, 65);
+	write(2, message, 59);
 	return (1);
 }
