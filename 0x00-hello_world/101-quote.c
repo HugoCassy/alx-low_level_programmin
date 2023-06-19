@@ -12,8 +12,7 @@ int main(void)
 	char message_2[] = " useful\" - Dora Korpar, 2015-10-19\n";
 
 	strcat(message, message_2);
-	size_t length = strlen(message);
 
-	write(2, message, length);
+	write(2, message, 66);
 	return (1);
 }
