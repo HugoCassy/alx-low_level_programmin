@@ -13,6 +13,6 @@ int main(void)
 
 	strcat(message, message_2);
 
-	write(2, message, 66);
+	write(2, message, 65);
 	return (1);
 }
