@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * _isLower - Checks for lowers
+ * _islower - Checks for lowers
  *
  * Return: Always 0 (Success)
  *
  */
-int _isLower(void)
+int _islower(void)
 {
 	int r;
 
