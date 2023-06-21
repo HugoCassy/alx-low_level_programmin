@@ -10,7 +10,7 @@ int _islower(void)
 
 	scanf("%d", &r);
 
-	if (r >= 96 && r <= 122)
+	if (r >= 97 && r <= 122)
 	{
 		_putchar(1);
 	}
@@ -18,5 +18,6 @@ int _islower(void)
 	{
 		_putchar(0);
 	}
+	_putchar('\n');
 	return (0);
 }
