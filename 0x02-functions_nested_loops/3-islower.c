@@ -4,13 +4,11 @@
  * @r:  integer value that will be used to compare
  * Return: Always 0 (Success)
  */
-int _islower(void)
+int _islower(int r)
 {
 	int r;
 
-	scanf("%d", &r);
-
-	if (r >= 97 && r <= 122)
+	if (r >= 'a' && r <= 'z')
 	{
 		_putchar(1);
 	}
