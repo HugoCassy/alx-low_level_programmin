@@ -9,7 +9,7 @@ int main(void)
 	print_alphabet_x10();
 	return (0);
 }
-void print_alphabet_x10()
+int print_alphabet_x10()
 {
 	int a;
 
@@ -24,4 +24,5 @@ void print_alphabet_x10()
 		 _putchar('\n');
 		i++;
 	}
+	return (0);
 }
