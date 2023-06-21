@@ -15,5 +15,5 @@ int _islower(int r)
 		_putchar(0);
 	}
 	_putchar('\n');
-	return (0);
+	return ('\0');
 }
