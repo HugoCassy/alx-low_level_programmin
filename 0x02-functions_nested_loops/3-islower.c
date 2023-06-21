@@ -8,11 +8,11 @@ int _islower(int r)
 {
 	if (r >= 96 && r <= 122)
 	{
-		_putchar(r + '0');
+		_putchar(1);
 	}
 	else
 	{
-		_putchar(r + '0');
+		_putchar(0);
 	}
 	return (0);
 }
