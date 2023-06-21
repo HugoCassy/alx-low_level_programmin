@@ -1,7 +1,4 @@
-#include <stdio.h>
 #include "main.h"
-#include <stdlib.h>
-#include <string.h>
 /*
  * main - prints something to the screen
  * @ print_function - Loops and prints letters
@@ -14,11 +11,12 @@ int main(void)
 }
 void print_alphabet(void)
 {
+	char alphabet;
 
-	for (alphabet = 'a'; alphabet <= 'z'; alphabets++)
+	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 	{
-		putchar(alphabets);
+		_putchar(alphabet);
 	}
-	putchar('\n');
+	_putchar('\n');
 }
 
