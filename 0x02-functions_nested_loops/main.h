@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 
-int _putchar(char c);
+char _putchar(char c);
 int print_alphabet(void);
 int print_alphabet_x10(void);
 int _islower(int c);
@@ -15,6 +15,4 @@ void jack_bauer(void);
 void times_table(void);
 int add(int a, int b);
 void print_to_98(int n);
-
-
 #endif
