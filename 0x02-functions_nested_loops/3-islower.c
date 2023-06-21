@@ -5,16 +5,17 @@
  * Return: Always 0 (Success)
  *
  */
-int _islower(void)
+int main(void)
 {
-	int r;
+	int r = _islower('H');
 
-	r = _islower('H');
-	_putchar(r + '0');
-	r = _islower('o');
-	_putchar(r + '0');
-	_putchar('\n');
+	if (r)
+	{
+		_putchar('1');
+	}
+	else
+	{
+		_putchar('0');
+	}
 	return (0);
 }
-
-
