@@ -4,7 +4,7 @@
  *@r:  integer value that will be used to compare
  *Return: Always 0 (Success)
  */
-int _islower(int r)
+int _isalpha(int r)
 {
 	if ((r >= 'a' && r <= 'z') || (r >= 'A' && r <= 'Z'))
 	{
