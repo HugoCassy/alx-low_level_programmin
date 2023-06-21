@@ -8,6 +8,8 @@ int _islower(void)
 {
 	int r;
 
+	scanf("%d", &r);
+
 	if (r >= 96 && r <= 122)
 	{
 		_putchar(1);
