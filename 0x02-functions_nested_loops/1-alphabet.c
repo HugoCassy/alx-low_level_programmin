@@ -1,7 +1,7 @@
 #include "main.h"
 /*
  * main - prints something to the screen
- * @print_function - Loops and prints letters
+ * 
  * Return: Always 0 (Success)
  */
 int main(void)
