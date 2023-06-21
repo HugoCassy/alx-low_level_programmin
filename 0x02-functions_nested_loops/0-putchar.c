@@ -6,13 +6,14 @@
  */
 int main(void)
 {
-	char *words = "_putchar";
-	int length = strlen(words);
+	int i;
 
-	for (int i = 0; i < length; i++)
+	char words[] = "_putchar";
+
+	for (i = 0; i < 8; i++)
 	{
-		putchar(words[i]);
+		_putchar(words[i]);
 	}
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }
