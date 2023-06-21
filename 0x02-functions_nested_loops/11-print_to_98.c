@@ -6,9 +6,13 @@
  */
 void print_to_98(int n)
 {
+	printf("%d, ", n);
 	for (n = 1; n <= 98; n++)
 	{
-		_putchar (n + '0');
+		if (n != 98)
+		{
+			printf("%d, ", n);
+		}
 	}
 }
 
