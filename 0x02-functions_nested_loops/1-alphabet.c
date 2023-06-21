@@ -1,7 +1,6 @@
 #include "main.h"
-/*
- * main - prints something to the screen
- * 
+/**
+ * print_alphabet - prints something to the screen
  * Return: Always 0 (Success)
  */
 int print_alphabet(void)
