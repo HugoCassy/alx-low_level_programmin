@@ -2,20 +2,18 @@
 /**
  * _islower - Checks for lowers
  *
+ * r: integer value that will be used to compare
  * Return: Always 0 (Success)
  *
  */
-int main(void)
+int _islower(int r)
 {
-	int r = _islower('H');
-
-	if (r)
-	{
-		_putchar('1');
-	}
-	else
-	{
-		_putchar('0');
-	}
+	r = _islower('H');
+	_putchar(r + '0');
+	r = _islower('o');
+	_putchar(r + '0');
+	r = _islower(108);
+	_putchar(r + '0');
+	_putchar('\n');
 	return (0);
 }
