@@ -9,7 +9,8 @@ int main(void)
 	print_alphabet();
 	return (0);
 }
-void print_alphabet(void)
+
+int print_alphabet(void)
 {
 	char alphabet;
 
@@ -18,5 +19,6 @@ void print_alphabet(void)
 		_putchar(alphabet);
 	}
 	_putchar('\n');
+	return (0);
 }
 
