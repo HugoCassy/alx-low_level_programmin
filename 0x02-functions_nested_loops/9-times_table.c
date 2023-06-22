@@ -14,12 +14,10 @@ void times_table(void)
 		{
 			int result = k * j;
 
-			putchar (result + '0');
-			if (k != 9)
-			{
-				_putchar (',');
-				_putchar (' ');
-			}
+			if (j == 9)
+				printf("%d", result);
+			else
+				printf ("%d, ", result);
 		}
 		_putchar ('\n');
 	}
