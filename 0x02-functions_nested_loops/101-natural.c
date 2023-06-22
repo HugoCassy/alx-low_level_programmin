@@ -5,7 +5,6 @@
  * Return: Always 0 (Success)
  */
 int main(void)
-
 {
 	int sum = 0;
 	int j;
@@ -19,6 +18,7 @@ int main(void)
 
 		printf("%d", sum);
 	}
+	return (0);
 }
 
 
