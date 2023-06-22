@@ -1,1 +1,1 @@
-This task help to understand C effectively
+This directory, solves some issues related to nested loops in C language
