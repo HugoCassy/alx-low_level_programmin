@@ -47,3 +47,4 @@ int convert_day(int month, int day)
 			break;
 	}
 	return (day);
+}
