@@ -14,9 +14,12 @@ void times_table(void)
 		{
 			int result = k * j;
 
-			_putchar (result + '0');
-			_putchar (',');
-			_putchar (' ');
+			printf("%d", result);
+			if (result != 81)
+			{
+				_putchar (',');
+				_putchar (' ');
+			}
 		}
 		_putchar ('\n');
 	}
