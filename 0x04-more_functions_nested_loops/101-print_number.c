@@ -6,13 +6,15 @@
  */
 void print_number(int n)
 {
+	int line;
+
+	line = 1;
+
 	if (n < 0)
 	{
 		_putchar ('-');
 		n = -n;
 	}
-
-	int line = 1;
 
 	while (n / line >= 10)
 	{
