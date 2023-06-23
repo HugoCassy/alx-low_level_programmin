@@ -26,4 +26,5 @@ void print_number(int c)
 		c %= line;
 		line /= 10;
 	}
+	_putchar ('\n');
 }
