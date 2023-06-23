@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * more_numbers - Prints numbers 10 times
  * Return: 0
