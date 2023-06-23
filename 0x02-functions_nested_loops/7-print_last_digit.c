@@ -5,11 +5,18 @@
  * @c: last digit
  * Return: Always 0 (Success)
  */
-int print_last_digit(void)
+int print_last_digit(int c)
 {
-	int c;
 	int b = c % 10;
 
-	printf("%b%b", b, b);
-	return (0);
+	if (b < 0)
+	{
+		_putchar (-b + '0');
+		return (-b);
+	}
+	else
+	{
+		_putchar (b + '0');
+		return (b);
+	}
 }
