@@ -1,26 +1,32 @@
 #include "main.h"
 /**
- * main - Prints 1 to 100, but replaces a
- * multiple of 3 with Fizz, a multiple of 
- * 5 with Buzz and a multiple common to
- * 3 and 5 , FizzBuzz
- *
+ * main - FizzBuzz Program
  * Return: 0
  */
 int main(void)
 {
-	int three;
-	int five;
-	int three_five;
 	int i;
 
-	for (i = 0; i <= 100; i++)
+	for (i = 1; i <= 100; i++)
 	{
-		printf("%d", i);
-
-		if (i % 3 == 0 && i % 5 == 0)
+		if ((i % 3 == 0) && (i % 5 == 0))
 		{
-			printf("FizzBuzz");
+			printf("FizzBuzz ");
+		}
+		else if (i % 3 == 0)
+		{
+			printf("Fizz ");
+		}
+
+		else if (i % 5 == 0)
+		{
+			printf("Buzz ");
+		}
+
+		else
+		{
+			printf("%d ", i);
 		}
 	}
+	return (0);
 }
