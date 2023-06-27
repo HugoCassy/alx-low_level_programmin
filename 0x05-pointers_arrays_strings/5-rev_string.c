@@ -21,5 +21,9 @@ void rev_string(char *s)
 		_putchar (s[i]);
 	}
 	_putchar ('\n');
+	for (i = 0; i < len; i++)
+	{
+		_putchar (s[i]);
+	}
 }
 
