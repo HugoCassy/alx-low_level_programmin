@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _puts - Prints something to the stdout
- * @c: pointer variable
+ * @str: pointer variable
  *
  * Return: 0;
  */
@@ -13,7 +13,7 @@ void _puts(char *str)
 
 	for (i = 0; i < len; i++)
 	{
-		putchar (str[i]);
+		_putchar (str[i]);
 	}
 }
 
