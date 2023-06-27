@@ -11,9 +11,9 @@ void _puts(char *str)
 
 	int i;
 
-	while (str[i] != '\0')
+	while (str[len] != '\0')
 	{
-		i++;
+		len++;
 	}
 
 	for (i = len - 1; i < str[i]; i--)
