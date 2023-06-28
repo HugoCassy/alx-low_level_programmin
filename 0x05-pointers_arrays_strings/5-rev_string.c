@@ -3,9 +3,9 @@
  * rev_string - Reverses a string
  * @s: pointer variable
  *
- * Return: 0;
+ * Return: s;
  */
-void rev_string(char *s)
+int rev_string(char *s)
 {
 	int i;
 	int len;
@@ -19,7 +19,6 @@ void rev_string(char *s)
 
 	for (i = len - 1; i >= 0; i--)
 	{
-		_putchar (s[i]);
+		return (s[i]);
 	}
-	_putchar ('\n');
 }
