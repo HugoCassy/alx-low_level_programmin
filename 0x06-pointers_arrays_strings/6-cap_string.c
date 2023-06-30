@@ -7,22 +7,25 @@
 char *cap_string(char *c)
 {
 	int i = 0;
-	int first_letter = 1;
+	int letter = 1;
 
 	while (c[i] != '\0')
 	{
-		if (first_letter && c[i] >= 'a' && c[i] <= 'z')
+		if (letter && (c[i] >= 'a' && c[i] <= 'z'))
 		{
-			c[i] = c[i] - ('a' - 'A');
+			c[i] -= 32;
 		}
-		else if (c[i] == ' ' || c[i] == '\t' || c[i] == '\n')
+		else if (c[i] == ' ' || c[i] == '\t' || c[i] == '\n'
+				|| c[i] == ',' || c[i] == ';' ||
+				c[i] == '.' || c[i] == '!' || c[i] == '?'
+				|| c[i] == '"' || c[i] == '(' ||
+				c[i] == ')' || c[i] == '{' || c[i] == '}')
 		{
-			first_letter = 1;
+			letter = 1;
 		}
-		else if (c[i] >= 'a' && c[i] <= 'z')
+		else
 		{
-			c[i] = c[i] - ('a' - 'A');
-			first_letter = 0;
+			letter = 0;
 		}
 		i++;
 	}
