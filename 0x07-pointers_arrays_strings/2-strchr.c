@@ -3,7 +3,7 @@
  * *_strchr - locates the first apperance of a string
  * @s: array of letters
  * @c: letter to be located
- * Return: c
+ * Return: s
  */
 char *_strchr(char *s, char c)
 {
