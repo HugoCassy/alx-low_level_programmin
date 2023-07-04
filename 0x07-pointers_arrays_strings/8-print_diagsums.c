@@ -16,6 +16,5 @@ void print_diagsums(int *a, int size)
 		first_diag += *(a + i * size + i);
 		second_diag += *(a + i * size + (size - 1 - i));
 	}
-	printf("%d", first_diag);
-	printf("%d", second_diag);
+	printf("%d", (first_diag + second_diag));
 }
