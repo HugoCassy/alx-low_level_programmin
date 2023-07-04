@@ -10,14 +10,14 @@ unsigned int _strspn(char *s, char *accept)
 	int len = 0;
 
 	int seen;
-	char *p;
+	char *p = "accept";
 
 	while (*s != '\0')
 	{
 
 		seen = 0;
 
-		for (*p = accept; *p != '\0'; p++)
+		for (p = accept; *p != '\0'; p++)
 		{
 			if (*s == *p)
 			{
