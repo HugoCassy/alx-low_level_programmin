@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * int _strspn - gets the length of a prefix
+ *  _strspn - gets the length of a prefix
  * @s: main long string
  * @accept:substring
  * Return: s
@@ -21,6 +21,7 @@ unsigned int _strspn(char *s, char *accept)
 			if (*s == *p)
 			{
 				seen = 1;
+
 				break;
 			}
 		}
