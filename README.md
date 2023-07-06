@@ -1,1 +1,1 @@
-This directory, solves some issues related to nested loops in C language
+Pointers and arrays in C
