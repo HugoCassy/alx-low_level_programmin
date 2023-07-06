@@ -1,8 +1,6 @@
 #include "main.h"
 /**
- * _sqrt_recursion - returns the natural squareroot of a number
- *
- * _sqrt_recursion_funct - helps the main function
+ * _sqrt_recursion- helps the main function
  * @n: Large digit
  * Return: n
  */
@@ -14,6 +12,13 @@ int _sqrt_recursion(int n)
 	}
 	return (_sqrt_recursion_funct(n, 0, n));
 }
+/**
+ * _sqrt_recursion_funct - function to get the sqyuar root
+ * @n: actual number
+ * @sta: starting number
+ * @end: ending number
+ * Return: n, sta, end
+ */
 int _sqrt_recursion_funct(int n, int sta, int end)
 {
 	int middle;
