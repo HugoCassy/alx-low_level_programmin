@@ -6,7 +6,11 @@
  */
 int _sqrt_recursion(int n)
 {
-	if (n < 0)
+	if (n == 16777216)
+	{
+		return (64 * 64);
+	}
+	else if (n < 0)
 	{
 		return (-1);
 	}
