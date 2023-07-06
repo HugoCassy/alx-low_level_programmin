@@ -16,12 +16,15 @@ int _sqrt_recursion(int n)
 }
 int _sqrt_recursion_funct(int n, int sta, int end)
 {
+	int middle;
+	int square;
+
 	if (sta > end)
 	{
 		return (-1);
 	}
-	int middle = (sta + end) / 2;
-	int square = middle * middle;
+	middle = (sta + end) / 2;
+	square = middle * middle;
 
 	if (square == n)
 	{
