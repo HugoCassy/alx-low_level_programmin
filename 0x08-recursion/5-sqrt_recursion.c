@@ -10,7 +10,7 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
-	return (_sqrt_recursion_funct(n, 0, n));
+	return (_sqrt_recursion_funct(n, 1, n));
 }
 /**
  * _sqrt_recursion_funct - function to get the sqyuar root
