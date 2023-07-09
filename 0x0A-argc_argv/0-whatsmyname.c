@@ -13,6 +13,6 @@ int main(int agrc, char *agrv[])
 	{
 		printf("%s", agrv[0]);
 	}
-	_putchar ('\n');
+	putchar ('\n');
 	return (0);
 }
