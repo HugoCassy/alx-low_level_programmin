@@ -1,11 +1,18 @@
 #include "main.h"
 /**
  * main - prints that prints its name then a newline
- * @agrc: number of arguments passed to the function
+ * @agrc: number of arguments passed
  * @agrv: Array of the arguments passed.
  * Return: 0;
  */
 int main(int agrc, char *agrv[])
 {
-	printf("%s", agrv[0]);
+	int i;
+	
+	for (i = 0; i < agrc; i++)
+	{
+		printf("%s", agrv[0]);
+	}
+	_putchar ('\n');
+	return (0);
 }
