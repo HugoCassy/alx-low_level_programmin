@@ -7,14 +7,15 @@
  */
 int main(int argc, char *argv[])
 {
-	int sum = 0;
+	int len = argc;
+
 	int i;
 
-	for (i = 0; argv[i] != NULL; i++)
+	for (i = 1; argv[i] != NULL; i++)
 	{
-		sum += 1;
+		len = len - 1;
 	}
 
-	printf("%d\n", sum);
+	printf("%d\n", len);
 	return (0);
 }
