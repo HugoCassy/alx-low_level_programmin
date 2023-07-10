@@ -8,7 +8,7 @@
 int main(int agrc, char *agrv[])
 {
 	int i;
-	
+
 	for (i = 0; i < agrc; i++)
 	{
 		printf("%s", agrv[0]);
