@@ -2,6 +2,7 @@
 #define main_h
 #include <stdio.h>
 #include <stddef.h>
+#include <stdlib.h>
 
 int _putchar(int c);
 int print_alphabet(void);
