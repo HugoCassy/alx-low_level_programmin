@@ -21,7 +21,7 @@ void free_grid(int **grid, int height)
  * Return: On success, returns a pointer to the created 2D array.
  * On failure or if width/height is 0 or negative, returns NULL.
  */
-int **create_grid(int width, int height)
+int **alloc_grid(int width, int height)
 {
 	int **grid, i;
 
