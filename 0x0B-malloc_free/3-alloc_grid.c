@@ -15,7 +15,7 @@ void free_grid(int **grid, int height)
 	free(grid);
 }
 /**
- * create_grid - Creates a 2D array of integers.
+ * alloc_grid - Creates a 2D array of integers.
  * @width: The width of the grid.
  * @height: The height of the grid.
  * Return: On success, returns a pointer to the created 2D array.
