@@ -6,14 +6,16 @@
  */
 size_t _str_length(const char *str)
 {
-	size_t length = 0;
+	size_t len;
 
-	while (str[length] != '\0')
+	len = 0;
+
+	while (str[len] != '\0')
 	{
-		length++;
+		len++;
 	}
 
-	return (length);
+	return (len);
 }
 
 /**
@@ -33,11 +35,18 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
-	size_t len1 = _str_length(s1);
-	size_t len2 = _str_length(s2);
+	size_t len1; 
+
+	len1 = _str_length(s1);
+
+	size_t len2;
+
+	len2 = _str_length(s2);
+
 	char *conca_t;
 
 	conca_t = malloc((len1 + len2 + 1) * sizeof(char));
+
 	if (conca_t == NULL)
 	{
 		return (NULL);
