@@ -38,7 +38,6 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	} 
-
 	len1 = _str_length(s1);
 	len2 = _str_length(s2);
 
