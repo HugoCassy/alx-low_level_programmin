@@ -24,19 +24,19 @@ void free_grid(int **grid, int height)
  */
 int **alloc_grid(int width, int height)
 {
+	int **grid, i;
+
 	if (width <= 0 || height <= 0)
 	{
 		return (NULL);
 	}
 
-	int **grid = malloc(height * sizeof(int *));
+	grid = malloc(height * sizeof(int *));
 
 	if (grid == NULL)
 	{
 		return (NULL);
 	}
-
-	int i;
 
 	for (i = 0; i < height; i++)
 	{
