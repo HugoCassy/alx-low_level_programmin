@@ -23,12 +23,12 @@ void free_grid(int **grid, int height)
  */
 int **create_grid(int width, int height)
 {
+	int **grid, i;
+
 	if (width <= 0 || height <= 0)
 	{
 		return (NULL);
 	}
-
-	int **grid;
 
 	grid = malloc(height * sizeof(int *));
 
@@ -36,9 +36,6 @@ int **create_grid(int width, int height)
 	{
 		return (NULL);
 	}
-
-	int i;
-
 	for (i = 0; i < height; i++)
 	{
 		grid[i] = malloc(width * sizeof(int));
