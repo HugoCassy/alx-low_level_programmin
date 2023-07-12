@@ -8,15 +8,17 @@
  */
 char *argstostr(int ac, char **av)
 {
+	int total_length, i, j, index, k, l;
+	char *result;
+
 	if (ac == 0 || av == NULL)
 		return (NULL);
 
-	int total_length = 0;
-	char *result;
+	total_length = 0;
 
-	for (int i = 0; i < ac; i++)
+	for (i = 0; i < ac; i++)
 	{
-		int j = 0;
+		j = 0;
 
 		while (av[i][j] != '\0')
 		{
@@ -30,15 +32,15 @@ char *argstostr(int ac, char **av)
 	if (result == NULL)
 		return (NULL);
 
-	int index = 0;
+	index = 0;
 
-	for (int i = 0; i < ac; i++)
+	for (k = 0; k < ac; k++)
 	{
-		int j = 0;
+		l = 0;
 
-		while (av[i][j] != '\0')
+		while (av[k][l] != '\0')
 		{
-			result[index++] = av[i][j++];
+			result[index++] = av[k][l++];
 		}
 		result[index++] = '\n';
 	}
