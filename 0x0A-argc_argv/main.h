@@ -21,6 +21,7 @@ int largest_number(int a, int b, int c);
 void print_remaining_days(int a, int b, int c);
 int convert_day(int month, int day);
 int _isupper(int c);
+int atoi(const char *str);
 int _isdigit(int c);
 int mul(int a, int b);
 void print_numbers(void);
