@@ -2,6 +2,8 @@
 #define main_h
 
 #include <stdio.h>
+#include <ctype.h>
+#include <stdlib.h>
 
 int main (int agrc, char *agrv[]);
 int _putchar(int c);
