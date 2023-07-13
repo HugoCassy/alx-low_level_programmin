@@ -29,8 +29,10 @@ char **strtow(char *str)
  */
 int count_words(char *str)
 {
-	int num_words = 0;
-	int is_word = 0;
+	int num_words, is_word;
+
+	num_words = 0;
+	is_word = 0;
 
 	while (*str)
 	{
