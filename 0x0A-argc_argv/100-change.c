@@ -7,7 +7,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int cents;
+	int cents, coins = 0;
 
 	if (argc != 2)
 	{
@@ -22,8 +22,6 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
-
-	int coins = 0;
 
 	coins += cents / 25;
 	cents %= 25;
