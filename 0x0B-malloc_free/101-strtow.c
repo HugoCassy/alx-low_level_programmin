@@ -1,21 +1,21 @@
 #include "main.h"
-int count_words(char *str);
-char **split_string(char *str, int num_words, int total_length);
+char **strtow(char *str);
 int count_words(char *str);
 char **split_string(char *str, int num_words);
+char *strdup_custom(char *str);
 
 /**
- *  * strtow - Splits a string into words.
+ * strtow - Splits a string into words.
  * @str: The string to split.
- * Return: On success, returns a pointer to an array of strings (words).
- *      *         On failure or if str is NULL or empty, returns NULL.
- *       */
+ * Return: Pointer to an array of strings (words), or NULL if failed.
+ */
 char **strtow(char *str)
 {
 	if (str == NULL || *str == '\0')
 		return (NULL);
 
 	int num_words = count_words(str);
+
 	if (num_words == 0)
 		return (NULL);
 
@@ -29,12 +29,8 @@ char **strtow(char *str)
  */
 int count_words(char *str)
 {
-	int num;
-
-	int is_word;
-
-	num_words = 0;
-	is_word = 0;
+	int num_words = 0;
+	int is_word = 0;
 
 	while (*str)
 	{
@@ -43,6 +39,7 @@ int count_words(char *str)
 			if (!is_word)
 			{
 				is_word = 1;
+
 				num_words++;
 			}
 		}
@@ -59,16 +56,16 @@ int count_words(char *str)
 
 /**
  * split_string - Splits a string into words.
- * @str The string to split.
+ * @str: The string to split.
  * @num_words: The number of words in the string.
  * Return: The array of split words.
- *       */
+ */
 char **split_string(char *str, int num_words)
 {
 	int i, j;
-	char **token, **words;
+	char **words, *token;
 
-	chamalloc((num_words + 1) * sizeof(char *));
+	words = malloc((num_words + 1) * sizeof(char *));
 
 	if (words == NULL)
 		return (NULL);
@@ -77,7 +74,8 @@ char **split_string(char *str, int num_words)
 
 	while (token != NULL)
 	{
-		words[i] = malloc((strlen(token) + 1) * sizeof(char));
+		words[i] = strdup_custom(token);
+
 		if (words[i] == NULL)
 		{
 			for (j = 0; j < i; j++)
@@ -85,14 +83,26 @@ char **split_string(char *str, int num_words)
 			free(words);
 			return (NULL);
 		}
-
-		strcpy(words[i], token);
 		i++;
-
 		token = strtok(NULL, " ");
 	}
 
 	words[num_words] = NULL;
 
 	return (words);
+}
+/**
+ * strdup_custom - Duplicates a string.
+ * @str: The string to duplicate.
+ * Return: The duplicated string, or NULL if failed.
+ */
+char *strdup_custom(char *str)
+{
+	size_t len = strlen(str) + 1;
+	char *duplicate = malloc(len * sizeof(char));
+
+	if (duplicate == NULL)
+		return (NULL);
+
+	return (memcpy(duplicate, str, len));
 }

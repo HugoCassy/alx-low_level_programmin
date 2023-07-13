@@ -2,8 +2,13 @@
 #define main_h
 #include <stdio.h>
 #include <stddef.h>
+#include <string.h>
 #include <stdlib.h>
 
+char **strtow(char *str);
+int count_words(char *str);
+char **split_string(char *str, int num_words);
+char *strdup_custom(char *str);
 char **strtow(char *str);
 char *argstostr(int ac, char **av);
 char *create_array(unsigned int size, char c);
